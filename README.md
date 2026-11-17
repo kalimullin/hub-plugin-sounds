@@ -1,27 +1,30 @@
-# Звуки — плагин Agents Hub
+# Sounds — an Agents Hub plugin
 
-Страница хаба звучит, когда флоту есть что вам сказать:
+The hub page makes a sound when the fleet has something to tell you:
 
-- **новое сообщение** — сессия закончила ход и написала вам: короткий глухой «тук»;
-- **ждёт вас** — вопрос формой, карточка инструмента, метка «ждёт вас», упавшая сессия: два мягких тона вверх, заметнее.
+- **new message** — a session finished its turn and wrote to you: a short muted "tock";
+- **waiting for you** — a question as a form, a tool card, the "waiting for you" mark, a crashed session: two soft
+  rising tones, more noticeable.
 
-Ваши собственные сообщения и всё старое при открытии страницы не звучат. Если в одном обновлении и сообщение, и
-вопрос — звучит только «ждёт вас». Открыто несколько вкладок хаба — звучит одна.
+Your own messages and everything old when the page opens make no sound. If one update has both a message and a
+question, only "waiting for you" sounds. With several hub tabs open, one of them sounds.
 
-Звуки синтезирует браузер (WebAudio), файлов нет. Браузер пускает звук только после первого клика или нажатия
-клавиши на странице — до этого плагин молчит.
+The browser synthesizes the sounds (WebAudio), there are no files. The browser lets a page play sound only after the
+first click or key press on it — until then the plugin stays silent.
 
-## Выключить
+The settings text is in English by default and in Russian for a hub whose language is Russian (`hub.lang`).
 
-- «Настройки» → «Звуки»: всё сразу, по отдельности «сообщение» и «ждёт вас», громкость, кнопки «послушать».
-  Хранится в этом браузере.
-- Или «Настройки» → «Плагины» → sounds → выключить.
+## Turn off
 
-## Поставить
+- "Settings" → "Sounds": all at once, "message" and "waiting for you" separately, the volume, "listen" buttons.
+  Kept in this browser.
+- Or "Settings" → "Plugins" → sounds → turn off.
 
-«Настройки» → «Плагины» → найти «sounds» или вставить ссылку на этот репо → «Проверить и поставить».
+## Install
 
-## Разработка
+"Settings" → "Plugins" → find "sounds" or paste the link to this repo → "Check and install".
 
-Что считать новым — `events.js`, чистая функция от двух снимков ядра; тесты: `node --test test/events.test.mjs`.
-Звуки — `SOUNDS` в `main.js`.
+## Development
+
+What counts as new is `events.js`, a pure function of two core snapshots; tests: `node --test test/events.test.mjs`.
+The sounds are `SOUNDS` in `main.js`.

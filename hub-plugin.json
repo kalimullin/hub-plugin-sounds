@@ -1,8 +1,8 @@
 {
   "name": "sounds",
   "icon": "icon.svg",
-  "description": "Звук на новое сообщение вам и другой, заметнее, когда сессия ждёт вашего ответа",
-  "why": "Слышно, что флот написал или ждёт вас, даже когда страница в другой вкладке",
+  "description": "A sound for a new message to you, and another, more noticeable one when a session waits for your answer",
+  "why": "You hear that the fleet wrote to you or is waiting for you, even when the page is in another tab",
   "version": "1.0.0",
   "hub": "^1.0",
   "web": "main.js"
